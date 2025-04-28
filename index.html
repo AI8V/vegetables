@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -235,12 +235,12 @@
     <div class="modal fade" role="dialog" tabindex="-1" id="quoteModal" aria-labelledby="quoteModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header text-white bg-info">
-                    <h5 class="modal-title" id="quoteModalLabel">طلب عرض سعر</h5><button class="btn-close" aria-label="إغلاق" data-bs-dismiss="modal" type="button"></button>
+                <div class="modal-header text-white bg-info"><button class="btn-close ms-1" aria-label="إغلاق" data-bs-dismiss="modal" type="button"></button>
+                    <h5 class="modal-title" id="quoteModalLabel">طلب عرض سعر</h5>
                 </div>
                 <div class="modal-body">
                     <form id="quoteForm">
-                        <div class="mb-3"><label class="form-label" for="productName">المنتج</label><input class="form-control" type="text" id="productName"></div>
+                        <div class="mb-3"><label class="form-label" for="productName">المنتج</label><input class="form-control" type="text" id="productName" required=""></div>
                         <div class="mb-3"><label class="form-label" for="quantity">الكمية المطلوبة (كجم)</label><input class="form-control form-control" type="number" id="quantity" min="1" required=""></div>
                         <div class="mb-3"><label class="form-label" for="name">الاسم</label><input class="form-control form-control" type="text" id="name" required=""></div>
                         <div class="mb-3"><label class="form-label" for="email">البريد الإلكتروني</label><input class="form-control form-control" type="email" id="email" required=""></div>
@@ -248,12 +248,12 @@
                         <div class="mb-3"><label class="form-label" for="notes">ملاحظات إضافية</label><textarea class="form-control form-control" id="notes" rows="3"></textarea></div>
                     </form>
                 </div>
-                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal" type="button">إغلاق</button><button class="btn btn-info" type="button">إرسال الطلب</button></div>
+                <div class="modal-footer m-auto"><button class="btn btn-outline-secondary" data-bs-dismiss="modal" type="button">إغلاق</button><button class="btn btn-info" type="submit" form="quoteForm" formaction="thank-you.html" formmethod="get">إرسال الطلب</button></div>
             </div>
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/untitled.js"></script>
+    <script src="assets/js/untitled-1.js"></script>
 </body>
 
 </html>
