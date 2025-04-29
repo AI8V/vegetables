@@ -4,17 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
+    <title>Eight Vegetables</title>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "vegetables",
+            "url": "https://www.ai8v.com"
+        }
+    </script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/whyUs.css">
 </head>
 
 <body>
-    <div id="mainCarousel" class="carousel slide carousel-fade my-5 pb-5 pt-5 mt-4" data-bs-ride="carousel" data-bs-interval="6000" data-bs-touch="true">
+    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-touch="true">
         <div class="shadow carousel-inner rounded-4">
-            <div class="carousel-item active" style="height:80vh;background:url('assets/img/تصميم%20بدون%20عنوان%20(1).jpg') center/cover fixed no-repeat;">
+            <div class="carousel-item active py-5" style="height:80vh;background:url('assets/img/تصميم%20بدون%20عنوان%20(1).jpg') center/cover fixed no-repeat;">
                 <div class="text-center d-flex flex-column justify-content-center align-items-center carousel-caption h-100">
-                    <div class="p-5 rounded-4" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
+                    <div class="p-5 rounded-4 mt-5" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
                         <h2 class="display-4 fw-bold mb-3" style="font-family:'Cairo', sans-serif;color:#fff;opacity:0;animation:fadeInUp 1s ease forwards 0.3s;"> أجود الخضروات المصرية للتصدير العالمي </h2>
                         <p class="lead mb-4" style="font-family:'Cairo', sans-serif;color:#f8f9fa;opacity:0;animation:fadeInUp 1s ease forwards 0.6s;"> نوفر أفضل المنتجات الزراعية الطازجة من المزارع المصرية إلى أسواق العالم </p><a class="btn btn-info btn-lg px-4 py-2" role="button" href="#products" style="font-family:'Cairo', sans-serif;transition:all 0.4s ease;opacity:0;animation:fadeInUp 1s ease forwards 0.9s;"> استكشف منتجاتنا </a>
                     </div>
@@ -22,7 +33,7 @@
             </div>
             <div class="carousel-item" style="height:80vh;background:url('assets/img/تصميم%20بدون%20عنوان%20(1).jpg') center/cover fixed no-repeat;">
                 <div class="text-center d-flex flex-column justify-content-center align-items-center carousel-caption h-100">
-                    <div class="p-5 rounded-4" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
+                    <div class="p-5 rounded-4 mt-5" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
                         <h1 class="display-4 fw-bold mb-3" style="font-family:'Cairo', sans-serif;color:#fff;opacity:0;animation:fadeInUp 1s ease forwards 0.3s;"> جودة عالمية بأيدي مصرية </h1>
                         <p class="lead mb-4" style="font-family:'Cairo', sans-serif;color:#f8f9fa;opacity:0;animation:fadeInUp 1s ease forwards 0.6s;"> التزام بالمعايير الدولية للجودة والسلامة الغذائية في جميع مراحل الإنتاج </p><a class="btn btn-info btn-lg px-4 py-2" role="button" href="#why-us" style="font-family:'Cairo', sans-serif;transition:all 0.4s ease;opacity:0;animation:fadeInUp 1s ease forwards 0.9s;"> لماذا تختارنا </a>
                     </div>
@@ -30,7 +41,7 @@
             </div>
             <div class="carousel-item" style="height:80vh;background:url('assets/img/تصميم%20بدون%20عنوان%20(1).jpg') center/cover fixed no-repeat;">
                 <div class="text-center d-flex flex-column justify-content-center align-items-center carousel-caption h-100">
-                    <div class="p-5 rounded-4" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
+                    <div class="p-5 rounded-4 mt-5" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
                         <h1 class="display-4 fw-bold mb-3" style="font-family:'Cairo', sans-serif;color:#fff;opacity:0;animation:fadeInUp 1s ease forwards 0.3s;"> خدمات لوجستية متكاملة </h1>
                         <p class="lead mb-4" style="font-family:'Cairo', sans-serif;color:#f8f9fa;opacity:0;animation:fadeInUp 1s ease forwards 0.6s;"> نوفر حلول التعبئة والتغليف والشحن المبرد لضمان وصول المنتجات طازجة </p><a class="btn btn-info btn-lg px-4 py-2" role="button" href="#services" style="font-family:'Cairo', sans-serif;transition:all 0.4s ease;opacity:0;animation:fadeInUp 1s ease forwards 0.9s;"> تعرف على خدماتنا </a>
                     </div>
@@ -41,7 +52,7 @@
     </div>
     <section id="product-catalog" class="py-5 my-5">
         <div class="container">
-            <div class="text-center bg-primary bg-opacity-25 border rounded mb-5 pb-5" id="products">
+            <div class="text-center bg-primary bg-opacity-25 border rounded mb-5 pb-5" id="products" style="background: linear-gradient(-18deg, black, var(--bs-info) 100%);border-radius: 50px;border-style: outset;box-shadow: inset -3px -5px var(--bs-info);font-family: 'Cairo', sans-serif;transform: rotate(0deg) skew(-1deg);">
                 <h2 class="section-title py-5 pt-5 pb-0">كتالوج المنتجات</h2>
                 <p class="lead">تصفح مجموعتنا المتنوعة من المنتجات الزراعية</p>
             </div>
@@ -58,7 +69,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">بطاطس مصرية</h5>
                                     <p class="card-text">بطاطس طازجة عالية الجودة من أجود المزارع المصرية، متوفرة بأحجام مختلفة وصالحة للتصدير.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success py-2">متوفر الآن</span><span class="badge rounded-pill bg-secondary py-2">درجة أولى</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">متوفر الآن</span><span class="badge rounded-pill bg-primary border rounded py-2">درجة أولى</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
@@ -72,7 +83,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">بصل أحمر</h5>
                                     <p class="card-text">بصل أحمر طازج ذو جودة عالية، مناسب للتصدير واحتياجات السوق المحلي. متوفر بأحجام مختلفة.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-success bg-info">متوفر الآن</span><span class="badge bg-info">محلي وتصدير</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">متوفر الآن</span><span class="badge rounded-pill bg-primary border rounded py-2">محلي وتصدير</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
@@ -86,7 +97,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">بصل ذهبي</h5>
                                     <p class="card-text">بصل ذهبي ذو جودة عالية، مذاق مميز وصالح للتصدير. يتميز بطول فترة التخزين وثبات جودته.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">متوفر الآن</span><span class="badge bg-info">طويل التخزين</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">متوفر الآن</span><span class="badge rounded-pill bg-primary border rounded py-2">طويل التخزين</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
@@ -100,13 +111,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">طماطم مصرية</h5>
                                     <p class="card-text">طماطم طازجة ذات لون أحمر زاهي وحجم متوسط، مناسبة للسلطات والطهي. متوفرة طوال العام.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">متوفر الآن</span><span class="badge bg-info">طازجة</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">متوفر الآن</span><span class="badge rounded-pill bg-primary border rounded py-2">طازجة</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-٧ كجم</p>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white border-0"><a class="btn btn-outline-info btn-sm" role="button" href="#request-quote">طلب عرض سعر</a></div>
+                                <div class="card-footer bg-secondary border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -114,13 +125,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">خيار أخضر</h5>
                                     <p class="card-text">خيار طازج بجودة عالية، لونه أخضر غامق وملمس ناعم. مثالي للسلطات والوجبات الخفيفة.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">متوفر الآن</span><span class="badge bg-info">طازج</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">متوفر الآن</span><span class="badge rounded-pill bg-primary border rounded py-2">طازج</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٣-٥ كجم</p>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white border-0"><a class="btn btn-outline-info btn-sm" role="button" href="#request-quote">طلب عرض سعر</a></div>
+                                <div class="card-footer bg-secondary border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -128,13 +139,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">جزر برتقالي</h5>
                                     <p class="card-text">جزر طازج ذو لون برتقالي غني، غني بالفيتامينات والمعادن. متوفر بأحجام متنوعة.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">متوفر الآن</span><span class="badge bg-info">غني بالفيتامينات</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">متوفر الآن</span><span class="badge rounded-pill bg-primary border rounded py-2">غني بالفيتامينات</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white border-0"><a class="btn btn-outline-info btn-sm" role="button" href="#request-quote">طلب عرض سعر</a></div>
+                                <div class="card-footer bg-secondary border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
                             </div>
                         </div>
                     </div>
@@ -146,7 +157,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">برتقال مصري</h5>
                                     <p class="card-text">برتقال حلو المذاق، غني بفيتامين C، مناسب للعصير والاستهلاك المباشر. منتج تصدير عالي الجودة.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">موسمي</span><span class="badge bg-info">حلو المذاق</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success border rounded py-2">موسمي</span><span class="badge bg-info">حلو المذاق</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> نوفمبر - مارس</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
@@ -262,15 +273,79 @@
             </div>
         </div>
     </section>
+    <section id="why-us" class="py-5 my-5">
+        <div class="container">
+            <div class="text-center text-bg-primary bg-primary bg-opacity-25 mb-5 pb-5 border rounded mb-5 pb-5" style="background: linear-gradient(-18deg, black, var(--bs-info) 100%);border-radius: 50px;border-style: outset;box-shadow: inset -3px -5px var(--bs-info);font-family: Aclonica, sans-serif;transform: rotate(0deg) skew(-1deg);">
+                <h2 class="section-title py-5 pt-5 pb-0" style="font-family: 'Cairo', sans-serif;">لماذا تختار شركتنا؟</h2>
+                <p class="lead" style="font-family:'Cairo', sans-serif;">أبرز المزايا التي تميزنا عن الآخرين</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-3"><i class="fas fa-award text-info fa-3x"></i></div>
+                            <h3 class="h4 mb-3" style="font-family:'Cairo', sans-serif;color:#0dcaf0;">جودة معتمدة دولياً</h3>
+                            <p class="text-muted" style="font-family:'Cairo', sans-serif;"> منتجاتنا حاصلة على شهادات ISO وGlobalGAP مع فحوصات جودة دورية </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-3"><i class="fas fa-shipping-fast text-info fa-3x"></i></div>
+                            <h3 class="h4 mb-3" style="font-family:'Cairo', sans-serif;color:#0dcaf0;">شحن مبرد سريع</h3>
+                            <p class="text-muted" style="font-family:'Cairo', sans-serif;"> نظام تبريد متكامل مع تتبع مباشر لضمان وصول المنتجات طازجة </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-3"><i class="fas fa-handshake text-info fa-3x"></i></div>
+                            <h3 class="h4 mb-3" style="font-family:'Cairo', sans-serif;color:#0dcaf0;">شراكات عالمية</h3>
+                            <p class="text-muted" style="font-family:'Cairo', sans-serif;"> تعاون مع أكبر الموانئ وشركات الشحن الدولية لتأمين وصول آمن </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-3"><i class="fas fa-leaf text-info fa-3x"></i></div>
+                            <h3 class="h4 mb-3" style="font-family:'Cairo', sans-serif;color:#0dcaf0;">زراعة مستدامة</h3>
+                            <p class="text-muted" style="font-family:'Cairo', sans-serif;"> استخدام تقنيات الري الحديثة والممارسات الزراعية الصديقة للبيئة </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-3"><i class="fas fa-headset text-info fa-3x"></i></div>
+                            <h3 class="h4 mb-3" style="font-family:'Cairo', sans-serif;color:#0dcaf0;">دعم فني متكامل</h3>
+                            <p class="text-muted" style="font-family:'Cairo', sans-serif;"> فريق دعم فني متاح 24/7 لمساعدتك في كل مراحل التعاقد </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-3"><i class="fas fa-percent text-info fa-3x"></i></div>
+                            <h3 class="h4 mb-3" style="font-family:'Cairo', sans-serif;color:#0dcaf0;">أسعار تنافسية</h3>
+                            <p class="text-muted" style="font-family:'Cairo', sans-serif;"> عروض أسعار مميزة مع خصومات للكميات الكبيرة وشروط دفع مرنة </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="modal fade" role="dialog" tabindex="-1" id="quoteModal" aria-labelledby="quoteModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header text-white bg-info"><button class="btn-close ms-1" aria-label="إغلاق" data-bs-dismiss="modal" type="button"></button>
+                <div class="modal-header text-white bg-primary"><button class="btn-close ms-1" aria-label="إغلاق" data-bs-dismiss="modal" type="button"></button>
                     <h5 class="modal-title" id="quoteModalLabel">طلب عرض سعر</h5>
                 </div>
                 <div class="modal-body">
                     <form id="quoteForm">
-                        <div class="mb-3"><label class="form-label" for="productName">المنتج</label><select class="form-select" id="productName">
+                        <div class="mb-3"><label class="form-label" for="productName">المنتج</label><select class="border rounded border-primary form-select form-select-lg" id="productName">
                                 <option value="بطاطس مصرية" selected="">بطاطس مصرية</option>
                                 <option value="طماطم مصرية" selected="">طماطم مصرية</option>
                                 <option value="بصل أحمر" selected="">بصل أحمر</option>
