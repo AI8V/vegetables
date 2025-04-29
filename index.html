@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="ar" dir="rtl">
+<html data-bs-theme="dark" lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <section id="product-catalog" class="py-5">
+    <div id="mainCarousel" class="carousel slide carousel-fade my-5 pb-5 pt-5 mt-4" data-bs-ride="carousel" data-bs-interval="6000" data-bs-touch="true">
+        <div class="shadow carousel-inner rounded-4">
+            <div class="carousel-item active" style="height:80vh;background:url('assets/img/تصميم%20بدون%20عنوان%20(1).jpg') center/cover fixed no-repeat;">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center carousel-caption h-100">
+                    <div class="p-5 rounded-4" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
+                        <h2 class="display-4 fw-bold mb-3" style="font-family:'Cairo', sans-serif;color:#fff;opacity:0;animation:fadeInUp 1s ease forwards 0.3s;"> أجود الخضروات المصرية للتصدير العالمي </h2>
+                        <p class="lead mb-4" style="font-family:'Cairo', sans-serif;color:#f8f9fa;opacity:0;animation:fadeInUp 1s ease forwards 0.6s;"> نوفر أفضل المنتجات الزراعية الطازجة من المزارع المصرية إلى أسواق العالم </p><a class="btn btn-info btn-lg px-4 py-2" role="button" href="#products" style="font-family:'Cairo', sans-serif;transition:all 0.4s ease;opacity:0;animation:fadeInUp 1s ease forwards 0.9s;"> استكشف منتجاتنا </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="height:80vh;background:url('Amr Abdelsalam.webp') center/cover fixed no-repeat;">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center carousel-caption h-100">
+                    <div class="p-5 rounded-4" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
+                        <h1 class="display-4 fw-bold mb-3" style="font-family:'Cairo', sans-serif;color:#fff;opacity:0;animation:fadeInUp 1s ease forwards 0.3s;"> جودة عالمية بأيدي مصرية </h1>
+                        <p class="lead mb-4" style="font-family:'Cairo', sans-serif;color:#f8f9fa;opacity:0;animation:fadeInUp 1s ease forwards 0.6s;"> التزام بالمعايير الدولية للجودة والسلامة الغذائية في جميع مراحل الإنتاج </p><a class="btn btn-info btn-lg px-4 py-2" role="button" href="#why-us" style="font-family:'Cairo', sans-serif;transition:all 0.4s ease;opacity:0;animation:fadeInUp 1s ease forwards 0.9s;"> لماذا تختارنا </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="height:80vh;background:url('assets/img/تصميم%20بدون%20عنوان%20(1).jpg') center/cover fixed no-repeat;">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center carousel-caption h-100">
+                    <div class="p-5 rounded-4" style="background:rgba(0,0,0,0.5);border:2px solid #0dcaf0;animation:borderPulse 3s infinite;max-width:700px;">
+                        <h1 class="display-4 fw-bold mb-3" style="font-family:'Cairo', sans-serif;color:#fff;opacity:0;animation:fadeInUp 1s ease forwards 0.3s;"> خدمات لوجستية متكاملة </h1>
+                        <p class="lead mb-4" style="font-family:'Cairo', sans-serif;color:#f8f9fa;opacity:0;animation:fadeInUp 1s ease forwards 0.6s;"> نوفر حلول التعبئة والتغليف والشحن المبرد لضمان وصول المنتجات طازجة </p><a class="btn btn-info btn-lg px-4 py-2" role="button" href="#services" style="font-family:'Cairo', sans-serif;transition:all 0.4s ease;opacity:0;animation:fadeInUp 1s ease forwards 0.9s;"> تعرف على خدماتنا </a>
+                    </div>
+                </div>
+            </div>
+        </div><button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">السابق</span></button><button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">التالي</span></button>
+        <div class="carousel-indicators mt-4"><button class="active" type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button><button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button></div>
+    </div>
+    <section id="product-catalog" class="py-5 my-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">كتالوج المنتجات</h2>
+            <div class="text-center bg-primary bg-opacity-25 border rounded mb-5 pb-5" id="products">
+                <h2 class="section-title py-5 pt-5 pb-0">كتالوج المنتجات</h2>
                 <p class="lead">تصفح مجموعتنا المتنوعة من المنتجات الزراعية</p>
             </div>
             <ul class="nav nav-pills justify-content-center mb-4" id="products-tab" role="tablist">
@@ -24,35 +54,35 @@
                 <div id="vegetables" class="tab-pane fade show active" role="tabpanel">
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="بطاطس">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="بطاطس">
                                 <div class="card-body">
                                     <h5 class="card-title">بطاطس مصرية</h5>
                                     <p class="card-text">بطاطس طازجة عالية الجودة من أجود المزارع المصرية، متوفرة بأحجام مختلفة وصالحة للتصدير.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">متوفر الآن</span><span class="badge bg-info">درجة أولى</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge rounded-pill bg-success py-2">متوفر الآن</span><span class="badge rounded-pill bg-secondary py-2">درجة أولى</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
+                                <div class="card-footer bg-secondary border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="بصل">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="بصل">
                                 <div class="card-body">
                                     <h5 class="card-title">بصل أحمر</h5>
                                     <p class="card-text">بصل أحمر طازج ذو جودة عالية، مناسب للتصدير واحتياجات السوق المحلي. متوفر بأحجام مختلفة.</p>
-                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-info">متوفر الآن</span><span class="badge bg-info">محلي وتصدير</span></div>
+                                    <div class="d-flex gap-2 mb-3"><span class="badge bg-success bg-info">متوفر الآن</span><span class="badge bg-info">محلي وتصدير</span></div>
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-0"><strong>الموسم:</strong> طوال العام</p>
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
+                                <div class="card-footer bg-secondary border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="بصل ذهبي">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="بصل ذهبي">
                                 <div class="card-body">
                                     <h5 class="card-title">بصل ذهبي</h5>
                                     <p class="card-text">بصل ذهبي ذو جودة عالية، مذاق مميز وصالح للتصدير. يتميز بطول فترة التخزين وثبات جودته.</p>
@@ -62,11 +92,11 @@
                                         <p class="mb-0"><strong>الوزن:</strong> ٥-١٠ كجم</p>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-white border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
+                                <div class="card-footer bg-secondary border-0"><button class="btn btn-outline-info btn-sm" role="button" data-bs-target="#quoteModal" data-bs-toggle="modal">طلب عرض سعر</button></div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="طماطم">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="طماطم">
                                 <div class="card-body">
                                     <h5 class="card-title">طماطم مصرية</h5>
                                     <p class="card-text">طماطم طازجة ذات لون أحمر زاهي وحجم متوسط، مناسبة للسلطات والطهي. متوفرة طوال العام.</p>
@@ -80,7 +110,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="خيار">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="خيار">
                                 <div class="card-body">
                                     <h5 class="card-title">خيار أخضر</h5>
                                     <p class="card-text">خيار طازج بجودة عالية، لونه أخضر غامق وملمس ناعم. مثالي للسلطات والوجبات الخفيفة.</p>
@@ -94,7 +124,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="جزر">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="جزر">
                                 <div class="card-body">
                                     <h5 class="card-title">جزر برتقالي</h5>
                                     <p class="card-text">جزر طازج ذو لون برتقالي غني، غني بالفيتامينات والمعادن. متوفر بأحجام متنوعة.</p>
@@ -112,7 +142,7 @@
                 <div id="fruits" class="tab-pane fade" role="tabpanel">
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="برتقال">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="برتقال">
                                 <div class="card-body">
                                     <h5 class="card-title">برتقال مصري</h5>
                                     <p class="card-text">برتقال حلو المذاق، غني بفيتامين C، مناسب للعصير والاستهلاك المباشر. منتج تصدير عالي الجودة.</p>
@@ -126,7 +156,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="مانجو">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="مانجو">
                                 <div class="card-body">
                                     <h5 class="card-title">مانجو مصرية</h5>
                                     <p class="card-text">مانجو مصرية بأصناف متعددة (عويس، صديقة، كيت)، ذات طعم حلو ورائحة مميزة. منتج تصدير فاخر.</p>
@@ -140,7 +170,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="عنب">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="عنب">
                                 <div class="card-body">
                                     <h5 class="card-title">عنب مصري</h5>
                                     <p class="card-text">عنب مصري بأنواعه (بناتي، فليم، كريمسون) بحبات كبيرة وطعم حلو. مناسب للتصدير والاستهلاك المحلي.</p>
@@ -154,7 +184,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="يوسفي">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="يوسفي">
                                 <div class="card-body">
                                     <h5 class="card-title">يوسفي مصري</h5>
                                     <p class="card-text">يوسفي سهل التقشير، حلو المذاق، غني بفيتامين C. مناسب للاستهلاك المباشر والتصدير.</p>
@@ -168,7 +198,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="رمان">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="رمان">
                                 <div class="card-body">
                                     <h5 class="card-title">رمان مصري</h5>
                                     <p class="card-text">رمان أحمر زاهي، كبير الحجم، حلو المذاق. مناسب للاستهلاك المباشر واستخراج العصير.</p>
@@ -186,7 +216,7 @@
                 <div id="herbs" class="tab-pane fade" role="tabpanel">
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="نعناع">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="نعناع">
                                 <div class="card-body">
                                     <h5 class="card-title">نعناع مصري</h5>
                                     <p class="card-text">نعناع طازج ذو رائحة قوية ومنعشة، يستخدم في المشروبات والأطعمة والأغراض الطبية.</p>
@@ -200,7 +230,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="كركديه">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="كركديه">
                                 <div class="card-body">
                                     <h5 class="card-title">كركديه مصري</h5>
                                     <p class="card-text">كركديه مجفف ذو لون أحمر زاهي ورائحة مميزة، يستخدم في المشروبات الساخنة والباردة.</p>
@@ -214,7 +244,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="شمر">
+                            <div class="card h-100 project-card"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100 card-img-top w-100 project-img" src="/api/placeholder/400/300" alt="شمر">
                                 <div class="card-body">
                                     <h5 class="card-title">شمر مصري</h5>
                                     <p class="card-text">شمر طازج ومجفف، يستخدم في الطهي والأغراض الطبية، ذو رائحة مميزة ويسوي الهضم.</p>
@@ -240,7 +270,11 @@
                 </div>
                 <div class="modal-body">
                     <form id="quoteForm">
-                        <div class="mb-3"><label class="form-label" for="productName">المنتج</label><input class="form-control" type="text" id="productName" required=""></div>
+                        <div class="mb-3"><label class="form-label" for="productName">المنتج</label><select class="form-select" id="productName">
+                                <option value="بطاطس مصرية" selected="">بطاطس مصرية</option>
+                                <option value="طماطم مصرية" selected="">طماطم مصرية</option>
+                                <option value="بصل أحمر" selected="">بصل أحمر</option>
+                            </select></div>
                         <div class="mb-3"><label class="form-label" for="quantity">الكمية المطلوبة (كجم)</label><input class="form-control form-control" type="number" id="quantity" min="1" required=""></div>
                         <div class="mb-3"><label class="form-label" for="name">الاسم</label><input class="form-control form-control" type="text" id="name" required=""></div>
                         <div class="mb-3"><label class="form-label" for="email">البريد الإلكتروني</label><input class="form-control form-control" type="email" id="email" required=""></div>
