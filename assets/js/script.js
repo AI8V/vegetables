@@ -7,7 +7,7 @@
 (function() {
   var gaScript = document.createElement('script');
   gaScript.async = true;
-  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-6LFBSD5XYN';
+  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-88S27K9NKH';
   document.head.appendChild(gaScript);
 
   window.dataLayer = window.dataLayer || [];
@@ -15,7 +15,7 @@
   window.gtag = gtag;
 
   gtag('js', new Date());
-  gtag('config', 'G-6LFBSD5XYN');
+  gtag('config', 'G-88S27K9NKH');
 })();
 
 // وضع جميع النصوص البرمجية داخل استدعاء DOMContentLoaded للتأكد من تحميل الصفحة أولاً
